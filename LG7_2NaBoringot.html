@@ -1,0 +1,46 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Styling Links</title>
+
+            <meta charset="UTF-8">
+            <meta name="Andrei Vincent C. Boringot" content="My Name">
+            <meta name="keywords" content="HTML, CSS, JavaScript">
+            <meta name="revised" content="28-06-2020">
+
+            <link rel="icon" href="icon.png" type="image/gif">
+
+            <style>
+                ul {list-style-type: none; overflow: hidden; }
+                li {float: left;}
+                a {font-size: 75px; font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                   padding: 10px; text-decoration: none;}
+     
+                a#first:link {color: black; background-color: lightpink;}
+                a#first:visited {color: blue; background-color: peachpuff;}
+                a#first:hover {color: white; background-color: black;}
+                a#first:active {color: yellow;}
+
+                a#second:link {color: violet; background-color: yellow;}
+                a#second:visited {color: rgb(31, 75, 31); background-color: rgb(252, 164, 0) }
+                a#second:hover {color: darkorchid; background-color: lightgoldenrodyellow;}
+                a#second:active {color: red;}
+
+                #firstlink:target {color: white; background-color: rgb(97, 79, 79);}
+                #secondlink:target {color: blanchedalmond; background-color: brown; 
+                                    border: 10px dotted green;}
+
+                div {border: 1px solid black; font-size: 50px;}
+            </style>
+        </head>
+        <body>
+            <ul>
+                <li><a href="#firstlink" id="first">First Link</a></li>
+                <li><a href="#secondlink" id="second">Second Link</a></li>
+            </ul>
+            <br>
+            <div id="firstlink">Div 1 here<br><br></div>
+            <br>
+            <div id="secondlink">Div 2 here<br><br></div>
+        </body>
+    </html>
